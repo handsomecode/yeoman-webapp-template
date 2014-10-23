@@ -1,0 +1,7 @@
+{
+  "name": "target",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.2"
+  }
+}

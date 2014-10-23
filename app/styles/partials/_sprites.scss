@@ -1,0 +1,29 @@
+$sprites: sprite-map("sprites/*.png", $position: 0%, $spacing: 5px, $repeat: no-repeat, $readonly-spacing: 10px);
+$sprites-retina: sprite-map("sprites-retina/*.png", $position: 0%, $spacing: 10px, $repeat: no-repeat, $readonly-spacing: 20px);
+
+@mixin sprite-background($name) {
+  background-image: $sprites;
+  background-position: sprite-position($sprites, $name);
+  background-repeat: no-repeat;
+  display: block;
+  height: image-height(sprite-file($sprites, $name));
+  width: image-width(sprite-file($sprites, $name));
+  $width: image-width(sprite-file($sprites, $name));
+  @include retina-image {
+    @if (sprite-position($sprites, $name) != sprite-position($sprites-retina, $name)) {
+      $ypos: round(nth(sprite-position($sprites-retina, $name), 2) / 2);
+      background-position: 0 $ypos;
+    }
+    @include background-size(image-width(sprite-path($sprites)) image-height(sprite-path($sprites)));
+    background-image: $sprites-retina;
+  }
+}
+
+
+@function sprite-width($name, $smap: $sprites) {
+  @return image-width(sprite-file($smap, $name));
+}
+
+@function sprite-height($name, $smap: $sprites) {
+  @return image-height(sprite-file($smap, $name));
+}
