@@ -59,11 +59,11 @@ module.exports = function (grunt) {
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+        tasks: ['compass:server'/*, 'autoprefixer'*/]
       },
       styles: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+        tasks: ['newer:copy:styles'/*, 'autoprefixer'*/]
       },
       livereload: {
         options: {
@@ -85,7 +85,7 @@ module.exports = function (grunt) {
       }
     },
 
-    // Bake 
+    // Bake
     bake: {
       build: {
         options: {
@@ -186,7 +186,7 @@ module.exports = function (grunt) {
       }
     },
 
-  
+
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
@@ -252,7 +252,7 @@ module.exports = function (grunt) {
             '<%= config.dist %>/scripts/{,*/}*.js',
             '<%= config.dist %>/styles/{,*/}*.css',
             '<%= config.dist %>/images/{,*/}*.*',
-            '<%= config.dist %>/styles/fonts/{,*/}*.*',
+            '<%= config.dist %>/fonts/{,*/}*.*',
             '<%= config.dist %>/*.{ico,png}'
           ]
         }
@@ -368,7 +368,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'fonts/{,*/}*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
@@ -438,12 +438,12 @@ module.exports = function (grunt) {
       'clean:server',
       'wiredep',
       'concurrent:server',
-      'autoprefixer',
+      /*'autoprefixer',*/
       'connect:livereload',
       'watch'
     ]);
   });
-  
+
   grunt.loadNpmTasks('grunt-bake');
 
   grunt.registerTask('server', function (target) {
@@ -456,7 +456,7 @@ module.exports = function (grunt) {
       grunt.task.run([
         'clean:server',
         'concurrent:test',
-        'autoprefixer'
+        /*'autoprefixer'*/
       ]);
     }
 
@@ -471,7 +471,7 @@ module.exports = function (grunt) {
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
+    /*'autoprefixer',*/
     'concat',
     'cssmin',
     'uglify',
