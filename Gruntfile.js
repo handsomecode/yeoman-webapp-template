@@ -59,11 +59,11 @@ module.exports = function (grunt) {
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server'/*, 'autoprefixer'*/]
+        tasks: ['compass:server', 'autoprefixer']
       },
       styles: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles'/*, 'autoprefixer'*/]
+        tasks: ['newer:copy:styles', 'autoprefixer']
       },
       livereload: {
         options: {
@@ -438,7 +438,7 @@ module.exports = function (grunt) {
       'clean:server',
       'wiredep',
       'concurrent:server',
-      /*'autoprefixer',*/
+      'autoprefixer',
       'connect:livereload',
       'watch'
     ]);
@@ -456,7 +456,7 @@ module.exports = function (grunt) {
       grunt.task.run([
         'clean:server',
         'concurrent:test',
-        /*'autoprefixer'*/
+        'autoprefixer'
       ]);
     }
 
@@ -471,13 +471,13 @@ module.exports = function (grunt) {
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
-    /*'autoprefixer',*/
+    'autoprefixer',
     'concat',
     'cssmin',
     'uglify',
     'copy:dist',
     'modernizr',
-    //'rev',
+    'rev',
     'usemin'
     //'htmlmin'
   ]);
