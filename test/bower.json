@@ -1,5 +1,5 @@
 {
-  "name": "target",
+  "name": "yeoman-webapp-template",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",

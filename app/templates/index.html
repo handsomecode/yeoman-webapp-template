@@ -1,9 +1,10 @@
-<!--(bake partials/head.html)-->
+@@include('./partials/head.html')
 
-<!--(bake partials/header.html)-->
+@@include('./partials/header.html')
+<h1>Hello <%= name %></h1>
 
-<p>Content goes here</p>
+<p>Content goes here another 15</p>
 
-<!--(bake partials/footer.html)-->
-      
-<!--(bake partials/foot.html)-->   
+@@include('./partials/footer.html')
+
+@@include('./partials/foot.html')
