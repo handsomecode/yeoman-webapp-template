@@ -14,11 +14,22 @@ var $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/style.scss')
-    .pipe($.rubySass({
-      style: 'expanded',
-      precision: 10
+    .pipe($.compass({
+      css: '.tmp/styles/',
+      sass: 'app/styles/',
+      image: 'images/',
+      generatedImages: '.tmp/images/generated',
+      javascripts: '<%= config.app %>/scripts',
+      fonts: '<%= config.app %>/fonts',
+      importPath: '<%= config.app %>/bower_components',
+      httpImagesPath: '../images',
+      httpGeneratedImagesPath: '../images/generated',
+      httpFontsPath: '../fonts',
+      relativeAssets: false,
+      assetCacheBuster: false,
+      raw: 'Sass::Script::Number.precision = 10\n'
     }))
-    .pipe($.autoprefixer('last 1 version'))
+    .pipe($.autoprefixer(['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe($.size());
 });
