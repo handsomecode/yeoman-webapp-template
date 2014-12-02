@@ -27,7 +27,8 @@
     "gulp-file-include": "~0.5.1",
     "gulp-template": "~1.1.1",
     "gulp-compass": "~2.0.2",
-    "gulp.spritesmith": "~1.4.0"
+    "gulp.spritesmith": "~1.4.0",
+    "main-bower-files": "~2.4.1"
   },
   "engines": {
     "node": ">=0.10.0"
