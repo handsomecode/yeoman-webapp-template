@@ -1,0 +1,420 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+  $abritel2x-x: round(3034 / 2px);
+  $abritel2x-y: round(326 / 2px);
+  $abritel2x-offset-x: round(-3034 / 2px);
+  $abritel2x-offset-y: round(-326 / 2px);
+  $abritel2x-width: round(134 / 2px);
+  $abritel2x-height: round(36 / 2px);
+  $abritel2x-total-width: round(3868 / 2px);
+  $abritel2x-total-height: round(800 / 2px);
+  $abritel2x-image: 'sprite-retina.png';
+  $abritel2x: round(3034px / 2) round(326px / 2) round(-3034px / 2) round(-326px / 2) round(134px / 2) round(36px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $alugue-temporada2x-x: round(2384 / 2px);
+  $alugue-temporada2x-y: round(460 / 2px);
+  $alugue-temporada2x-offset-x: round(-2384 / 2px);
+  $alugue-temporada2x-offset-y: round(-460 / 2px);
+  $alugue-temporada2x-width: round(200 / 2px);
+  $alugue-temporada2x-height: round(26 / 2px);
+  $alugue-temporada2x-total-width: round(3868 / 2px);
+  $alugue-temporada2x-total-height: round(800 / 2px);
+  $alugue-temporada2x-image: 'sprite-retina.png';
+  $alugue-temporada2x: round(2384px / 2) round(460px / 2) round(-2384px / 2) round(-460px / 2) round(200px / 2) round(26px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $birdhouses-clouds2x-x: round(794 / 2px);
+  $birdhouses-clouds2x-y: round(0 / 2px);
+  $birdhouses-clouds2x-offset-x: round(-794 / 2px);
+  $birdhouses-clouds2x-offset-y: round(0 / 2px);
+  $birdhouses-clouds2x-width: round(794 / 2px);
+  $birdhouses-clouds2x-height: round(466 / 2px);
+  $birdhouses-clouds2x-total-width: round(3868 / 2px);
+  $birdhouses-clouds2x-total-height: round(800 / 2px);
+  $birdhouses-clouds2x-image: 'sprite-retina.png';
+  $birdhouses-clouds2x: round(794px / 2) round(0px / 2) round(-794px / 2) round(0px / 2) round(794px / 2) round(466px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $birdhouses-houses2x-x: round(0 / 2px);
+  $birdhouses-houses2x-y: round(0 / 2px);
+  $birdhouses-houses2x-offset-x: round(0 / 2px);
+  $birdhouses-houses2x-offset-y: round(0 / 2px);
+  $birdhouses-houses2x-width: round(794 / 2px);
+  $birdhouses-houses2x-height: round(800 / 2px);
+  $birdhouses-houses2x-total-width: round(3868 / 2px);
+  $birdhouses-houses2x-total-height: round(800 / 2px);
+  $birdhouses-houses2x-image: 'sprite-retina.png';
+  $birdhouses-houses2x: round(0px / 2) round(0px / 2) round(0px / 2) round(0px / 2) round(794px / 2) round(800px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $bluetent-dots-mobile2x-x: round(3786 / 2px);
+  $bluetent-dots-mobile2x-y: round(326 / 2px);
+  $bluetent-dots-mobile2x-offset-x: round(-3786 / 2px);
+  $bluetent-dots-mobile2x-offset-y: round(-326 / 2px);
+  $bluetent-dots-mobile2x-width: round(63 / 2px);
+  $bluetent-dots-mobile2x-height: round(15 / 2px);
+  $bluetent-dots-mobile2x-total-width: round(3868 / 2px);
+  $bluetent-dots-mobile2x-total-height: round(800 / 2px);
+  $bluetent-dots-mobile2x-image: 'sprite-retina.png';
+  $bluetent-dots-mobile2x: round(3786px / 2) round(326px / 2) round(-3786px / 2) round(-326px / 2) round(63px / 2) round(15px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $bluetent-dots2x-x: round(2094 / 2px);
+  $bluetent-dots2x-y: round(460 / 2px);
+  $bluetent-dots2x-offset-x: round(-2094 / 2px);
+  $bluetent-dots2x-offset-y: round(-460 / 2px);
+  $bluetent-dots2x-width: round(126 / 2px);
+  $bluetent-dots2x-height: round(27 / 2px);
+  $bluetent-dots2x-total-width: round(3868 / 2px);
+  $bluetent-dots2x-total-height: round(800 / 2px);
+  $bluetent-dots2x-image: 'sprite-retina.png';
+  $bluetent-dots2x: round(2094px / 2) round(460px / 2) round(-2094px / 2) round(-460px / 2) round(126px / 2) round(27px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $bluetent-mobile2x-x: round(1986 / 2px);
+  $bluetent-mobile2x-y: round(326 / 2px);
+  $bluetent-mobile2x-offset-x: round(-1986 / 2px);
+  $bluetent-mobile2x-offset-y: round(-326 / 2px);
+  $bluetent-mobile2x-width: round(96 / 2px);
+  $bluetent-mobile2x-height: round(98 / 2px);
+  $bluetent-mobile2x-total-width: round(3868 / 2px);
+  $bluetent-mobile2x-total-height: round(800 / 2px);
+  $bluetent-mobile2x-image: 'sprite-retina.png';
+  $bluetent-mobile2x: round(1986px / 2) round(326px / 2) round(-1986px / 2) round(-326px / 2) round(96px / 2) round(98px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $bluetent2x-x: round(1638 / 2px);
+  $bluetent2x-y: round(326 / 2px);
+  $bluetent2x-offset-x: round(-1638 / 2px);
+  $bluetent2x-offset-y: round(-326 / 2px);
+  $bluetent2x-width: round(132 / 2px);
+  $bluetent2x-height: round(134 / 2px);
+  $bluetent2x-total-width: round(3868 / 2px);
+  $bluetent2x-total-height: round(800 / 2px);
+  $bluetent2x-image: 'sprite-retina.png';
+  $bluetent2x: round(1638px / 2) round(326px / 2) round(-1638px / 2) round(-326px / 2) round(132px / 2) round(134px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $bqqkabach2x-x: round(2220 / 2px);
+  $bqqkabach2x-y: round(460 / 2px);
+  $bqqkabach2x-offset-x: round(-2220 / 2px);
+  $bqqkabach2x-offset-y: round(-460 / 2px);
+  $bqqkabach2x-width: round(164 / 2px);
+  $bqqkabach2x-height: round(26 / 2px);
+  $bqqkabach2x-total-width: round(3868 / 2px);
+  $bqqkabach2x-total-height: round(800 / 2px);
+  $bqqkabach2x-image: 'sprite-retina.png';
+  $bqqkabach2x: round(2220px / 2) round(460px / 2) round(-2220px / 2) round(-460px / 2) round(164px / 2) round(26px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $fewo-direkt2x-x: round(1752 / 2px);
+  $fewo-direkt2x-y: round(460 / 2px);
+  $fewo-direkt2x-offset-x: round(-1752 / 2px);
+  $fewo-direkt2x-offset-y: round(-460 / 2px);
+  $fewo-direkt2x-width: round(174 / 2px);
+  $fewo-direkt2x-height: round(28 / 2px);
+  $fewo-direkt2x-total-width: round(3868 / 2px);
+  $fewo-direkt2x-total-height: round(800 / 2px);
+  $fewo-direkt2x-image: 'sprite-retina.png';
+  $fewo-direkt2x: round(1752px / 2) round(460px / 2) round(-1752px / 2) round(-460px / 2) round(174px / 2) round(28px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $graph-dots1-mobile2x-x: round(1822 / 2px);
+  $graph-dots1-mobile2x-y: round(326 / 2px);
+  $graph-dots1-mobile2x-offset-x: round(-1822 / 2px);
+  $graph-dots1-mobile2x-offset-y: round(-326 / 2px);
+  $graph-dots1-mobile2x-width: round(26 / 2px);
+  $graph-dots1-mobile2x-height: round(104 / 2px);
+  $graph-dots1-mobile2x-total-width: round(3868 / 2px);
+  $graph-dots1-mobile2x-total-height: round(800 / 2px);
+  $graph-dots1-mobile2x-image: 'sprite-retina.png';
+  $graph-dots1-mobile2x: round(1822px / 2) round(326px / 2) round(-1822px / 2) round(-326px / 2) round(26px / 2) round(104px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $graph-dots12x-x: round(1588 / 2px);
+  $graph-dots12x-y: round(326 / 2px);
+  $graph-dots12x-offset-x: round(-1588 / 2px);
+  $graph-dots12x-offset-y: round(-326 / 2px);
+  $graph-dots12x-width: round(50 / 2px);
+  $graph-dots12x-height: round(208 / 2px);
+  $graph-dots12x-total-width: round(3868 / 2px);
+  $graph-dots12x-total-height: round(800 / 2px);
+  $graph-dots12x-image: 'sprite-retina.png';
+  $graph-dots12x: round(1588px / 2) round(326px / 2) round(-1588px / 2) round(-326px / 2) round(50px / 2) round(208px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $graph-dots2-mobile2x-x: round(1770 / 2px);
+  $graph-dots2-mobile2x-y: round(326 / 2px);
+  $graph-dots2-mobile2x-offset-x: round(-1770 / 2px);
+  $graph-dots2-mobile2x-offset-y: round(-326 / 2px);
+  $graph-dots2-mobile2x-width: round(52 / 2px);
+  $graph-dots2-mobile2x-height: round(122 / 2px);
+  $graph-dots2-mobile2x-total-width: round(3868 / 2px);
+  $graph-dots2-mobile2x-total-height: round(800 / 2px);
+  $graph-dots2-mobile2x-image: 'sprite-retina.png';
+  $graph-dots2-mobile2x: round(1770px / 2) round(326px / 2) round(-1770px / 2) round(-326px / 2) round(52px / 2) round(122px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $graph-dots22x-x: round(1878 / 2px);
+  $graph-dots22x-y: round(326 / 2px);
+  $graph-dots22x-offset-x: round(-1878 / 2px);
+  $graph-dots22x-offset-y: round(-326 / 2px);
+  $graph-dots22x-width: round(108 / 2px);
+  $graph-dots22x-height: round(102 / 2px);
+  $graph-dots22x-total-width: round(3868 / 2px);
+  $graph-dots22x-total-height: round(800 / 2px);
+  $graph-dots22x-image: 'sprite-retina.png';
+  $graph-dots22x: round(1878px / 2) round(326px / 2) round(-1878px / 2) round(-326px / 2) round(108px / 2) round(102px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $graph-dots3-mobile2x-x: round(1848 / 2px);
+  $graph-dots3-mobile2x-y: round(326 / 2px);
+  $graph-dots3-mobile2x-offset-x: round(-1848 / 2px);
+  $graph-dots3-mobile2x-offset-y: round(-326 / 2px);
+  $graph-dots3-mobile2x-width: round(30 / 2px);
+  $graph-dots3-mobile2x-height: round(104 / 2px);
+  $graph-dots3-mobile2x-total-width: round(3868 / 2px);
+  $graph-dots3-mobile2x-total-height: round(800 / 2px);
+  $graph-dots3-mobile2x-image: 'sprite-retina.png';
+  $graph-dots3-mobile2x: round(1848px / 2) round(326px / 2) round(-1848px / 2) round(-326px / 2) round(30px / 2) round(104px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $graph-dots32x-x: round(2678 / 2px);
+  $graph-dots32x-y: round(326 / 2px);
+  $graph-dots32x-offset-x: round(-2678 / 2px);
+  $graph-dots32x-offset-y: round(-326 / 2px);
+  $graph-dots32x-width: round(86 / 2px);
+  $graph-dots32x-height: round(56 / 2px);
+  $graph-dots32x-total-width: round(3868 / 2px);
+  $graph-dots32x-total-height: round(800 / 2px);
+  $graph-dots32x-image: 'sprite-retina.png';
+  $graph-dots32x: round(2678px / 2) round(326px / 2) round(-2678px / 2) round(-326px / 2) round(86px / 2) round(56px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $graph-dots42x-x: round(2082 / 2px);
+  $graph-dots42x-y: round(326 / 2px);
+  $graph-dots42x-offset-x: round(-2082 / 2px);
+  $graph-dots42x-offset-y: round(-326 / 2px);
+  $graph-dots42x-width: round(198 / 2px);
+  $graph-dots42x-height: round(82 / 2px);
+  $graph-dots42x-total-width: round(3868 / 2px);
+  $graph-dots42x-total-height: round(800 / 2px);
+  $graph-dots42x-image: 'sprite-retina.png';
+  $graph-dots42x: round(2082px / 2) round(326px / 2) round(-2082px / 2) round(-326px / 2) round(198px / 2) round(82px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $homeaway2x-x: round(3606 / 2px);
+  $homeaway2x-y: round(326 / 2px);
+  $homeaway2x-offset-x: round(-3606 / 2px);
+  $homeaway2x-offset-y: round(-326 / 2px);
+  $homeaway2x-width: round(180 / 2px);
+  $homeaway2x-height: round(32 / 2px);
+  $homeaway2x-total-width: round(3868 / 2px);
+  $homeaway2x-total-height: round(800 / 2px);
+  $homeaway2x-image: 'sprite-retina.png';
+  $homeaway2x: round(3606px / 2) round(326px / 2) round(-3606px / 2) round(-326px / 2) round(180px / 2) round(32px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $homelidays2x-x: round(2876 / 2px);
+  $homelidays2x-y: round(326 / 2px);
+  $homelidays2x-offset-x: round(-2876 / 2px);
+  $homelidays2x-offset-y: round(-326 / 2px);
+  $homelidays2x-width: round(158 / 2px);
+  $homelidays2x-height: round(38 / 2px);
+  $homelidays2x-total-width: round(3868 / 2px);
+  $homelidays2x-total-height: round(800 / 2px);
+  $homelidays2x-image: 'sprite-retina.png';
+  $homelidays2x: round(2876px / 2) round(326px / 2) round(-2876px / 2) round(-326px / 2) round(158px / 2) round(38px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $hr-shadow2x-x: round(1588 / 2px);
+  $hr-shadow2x-y: round(0 / 2px);
+  $hr-shadow2x-offset-x: round(-1588 / 2px);
+  $hr-shadow2x-offset-y: round(0 / 2px);
+  $hr-shadow2x-width: round(2280 / 2px);
+  $hr-shadow2x-height: round(326 / 2px);
+  $hr-shadow2x-total-width: round(3868 / 2px);
+  $hr-shadow2x-total-height: round(800 / 2px);
+  $hr-shadow2x-image: 'sprite-retina.png';
+  $hr-shadow2x: round(1588px / 2) round(0px / 2) round(-1588px / 2) round(0px / 2) round(2280px / 2) round(326px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $logo-mobile2x-x: round(3294 / 2px);
+  $logo-mobile2x-y: round(326 / 2px);
+  $logo-mobile2x-offset-x: round(-3294 / 2px);
+  $logo-mobile2x-offset-y: round(-326 / 2px);
+  $logo-mobile2x-width: round(312 / 2px);
+  $logo-mobile2x-height: round(34 / 2px);
+  $logo-mobile2x-total-width: round(3868 / 2px);
+  $logo-mobile2x-total-height: round(800 / 2px);
+  $logo-mobile2x-image: 'sprite-retina.png';
+  $logo-mobile2x: round(3294px / 2) round(326px / 2) round(-3294px / 2) round(-326px / 2) round(312px / 2) round(34px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $logo2x-x: round(2280 / 2px);
+  $logo2x-y: round(326 / 2px);
+  $logo2x-offset-x: round(-2280 / 2px);
+  $logo2x-offset-y: round(-326 / 2px);
+  $logo2x-width: round(398 / 2px);
+  $logo2x-height: round(80 / 2px);
+  $logo2x-total-width: round(3868 / 2px);
+  $logo2x-total-height: round(800 / 2px);
+  $logo2x-image: 'sprite-retina.png';
+  $logo2x: round(2280px / 2) round(326px / 2) round(-2280px / 2) round(-326px / 2) round(398px / 2) round(80px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $ownersdirect2x-x: round(2584 / 2px);
+  $ownersdirect2x-y: round(460 / 2px);
+  $ownersdirect2x-offset-x: round(-2584 / 2px);
+  $ownersdirect2x-offset-y: round(-460 / 2px);
+  $ownersdirect2x-width: round(198 / 2px);
+  $ownersdirect2x-height: round(26 / 2px);
+  $ownersdirect2x-total-width: round(3868 / 2px);
+  $ownersdirect2x-total-height: round(800 / 2px);
+  $ownersdirect2x-image: 'sprite-retina.png';
+  $ownersdirect2x: round(2584px / 2) round(460px / 2) round(-2584px / 2) round(-460px / 2) round(198px / 2) round(26px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $stayz2x-x: round(2764 / 2px);
+  $stayz2x-y: round(326 / 2px);
+  $stayz2x-offset-x: round(-2764 / 2px);
+  $stayz2x-offset-y: round(-326 / 2px);
+  $stayz2x-width: round(112 / 2px);
+  $stayz2x-height: round(42 / 2px);
+  $stayz2x-total-width: round(3868 / 2px);
+  $stayz2x-total-height: round(800 / 2px);
+  $stayz2x-image: 'sprite-retina.png';
+  $stayz2x: round(2764px / 2) round(326px / 2) round(-2764px / 2) round(-326px / 2) round(112px / 2) round(42px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $toprural2x-x: round(3168 / 2px);
+  $toprural2x-y: round(326 / 2px);
+  $toprural2x-offset-x: round(-3168 / 2px);
+  $toprural2x-offset-y: round(-326 / 2px);
+  $toprural2x-width: round(126 / 2px);
+  $toprural2x-height: round(36 / 2px);
+  $toprural2x-total-width: round(3868 / 2px);
+  $toprural2x-total-height: round(800 / 2px);
+  $toprural2x-image: 'sprite-retina.png';
+  $toprural2x: round(3168px / 2) round(326px / 2) round(-3168px / 2) round(-326px / 2) round(126px / 2) round(36px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $travelmob2x-x: round(1926 / 2px);
+  $travelmob2x-y: round(460 / 2px);
+  $travelmob2x-offset-x: round(-1926 / 2px);
+  $travelmob2x-offset-y: round(-460 / 2px);
+  $travelmob2x-width: round(168 / 2px);
+  $travelmob2x-height: round(28 / 2px);
+  $travelmob2x-total-width: round(3868 / 2px);
+  $travelmob2x-total-height: round(800 / 2px);
+  $travelmob2x-image: 'sprite-retina.png';
+  $travelmob2x: round(1926px / 2) round(460px / 2) round(-1926px / 2) round(-460px / 2) round(168px / 2) round(28px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $vacantionrentals2x-x: round(2678 / 2px);
+  $vacantionrentals2x-y: round(382 / 2px);
+  $vacantionrentals2x-offset-x: round(-2678 / 2px);
+  $vacantionrentals2x-offset-y: round(-382 / 2px);
+  $vacantionrentals2x-width: round(222 / 2px);
+  $vacantionrentals2x-height: round(20 / 2px);
+  $vacantionrentals2x-total-width: round(3868 / 2px);
+  $vacantionrentals2x-total-height: round(800 / 2px);
+  $vacantionrentals2x-image: 'sprite-retina.png';
+  $vacantionrentals2x: round(2678px / 2) round(382px / 2) round(-2678px / 2) round(-382px / 2) round(222px / 2) round(20px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+  $vrbo2x-x: round(1638 / 2px);
+  $vrbo2x-y: round(460 / 2px);
+  $vrbo2x-offset-x: round(-1638 / 2px);
+  $vrbo2x-offset-y: round(-460 / 2px);
+  $vrbo2x-width: round(114 / 2px);
+  $vrbo2x-height: round(32 / 2px);
+  $vrbo2x-total-width: round(3868 / 2px);
+  $vrbo2x-total-height: round(800 / 2px);
+  $vrbo2x-image: 'sprite-retina.png';
+  $vrbo2x: round(1638px / 2) round(460px / 2) round(-1638px / 2) round(-460px / 2) round(114px / 2) round(32px / 2) round(3868px / 2) round(800px / 2) 'sprite-retina.png' round(3868px / 2) round(800px / 2);
+
+
+  @mixin sprite2x-width($sprite) {
+    width: nth($sprite, 5);
+  }
+
+  @mixin sprite2x-height($sprite) {
+    height: nth($sprite, 6);
+  }
+
+  @mixin sprite2x-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite2x-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: image-url(#{$sprite-image});
+  }
+
+  @mixin sprite-2x-old($sprite) {
+    @include sprite2x-image($sprite);
+    @include sprite2x-position($sprite);
+    @include sprite2x-width($sprite);
+    @include sprite2x-height($sprite);
+  }
+
+  @mixin sprite2x($sprite) {
+    @if $sprite != '' {
+
+      @include sprite2x-image($sprite);
+      @include sprite2x-position($sprite);
+      @include sprite2x-width($sprite);
+      @include sprite2x-height($sprite);
+      background-size: nth($sprite, 10) nth($sprite, 11);
+    }
+  }
+
+
+@media (-webkit-min-device-pixel-ratio: 1.3),
+(min--moz-device-pixel-ratio: 1.3),
+(-o-min-device-pixel-ratio: 2.6/2),
+(min-device-pixel-ratio: 1.3),
+(min-resolution: 1.3dppx) {
+  .sprite-abritel {
+    @include sprite2x($abritel2x);
+  }
+  .sprite-alugue-temporada {
+    @include sprite2x($alugue-temporada2x);
+  }
+  .sprite-birdhouses-clouds {
+    @include sprite2x($birdhouses-clouds2x);
+  }
+  .sprite-birdhouses-houses {
+    @include sprite2x($birdhouses-houses2x);
+  }
+  .sprite-bluetent-dots-mobile {
+    @include sprite2x($bluetent-dots-mobile2x);
+  }
+  .sprite-bluetent-dots {
+    @include sprite2x($bluetent-dots2x);
+  }
+  .sprite-bluetent-mobile {
+    @include sprite2x($bluetent-mobile2x);
+  }
+  .sprite-bluetent {
+    @include sprite2x($bluetent2x);
+  }
+  .sprite-bqqkabach {
+    @include sprite2x($bqqkabach2x);
+  }
+  .sprite-fewo-direkt {
+    @include sprite2x($fewo-direkt2x);
+  }
+  .sprite-graph-dots1-mobile {
+    @include sprite2x($graph-dots1-mobile2x);
+  }
+  .sprite-graph-dots1 {
+    @include sprite2x($graph-dots12x);
+  }
+  .sprite-graph-dots2-mobile {
+    @include sprite2x($graph-dots2-mobile2x);
+  }
+  .sprite-graph-dots2 {
+    @include sprite2x($graph-dots22x);
+  }
+  .sprite-graph-dots3-mobile {
+    @include sprite2x($graph-dots3-mobile2x);
+  }
+  .sprite-graph-dots3 {
+    @include sprite2x($graph-dots32x);
+  }
+  .sprite-graph-dots4 {
+    @include sprite2x($graph-dots42x);
+  }
+  .sprite-homeaway {
+    @include sprite2x($homeaway2x);
+  }
+  .sprite-homelidays {
+    @include sprite2x($homelidays2x);
+  }
+  .sprite-hr-shadow {
+    @include sprite2x($hr-shadow2x);
+  }
+  .sprite-logo-mobile {
+    @include sprite2x($logo-mobile2x);
+  }
+  .sprite-logo {
+    @include sprite2x($logo2x);
+  }
+  .sprite-ownersdirect {
+    @include sprite2x($ownersdirect2x);
+  }
+  .sprite-stayz {
+    @include sprite2x($stayz2x);
+  }
+  .sprite-toprural {
+    @include sprite2x($toprural2x);
+  }
+  .sprite-travelmob {
+    @include sprite2x($travelmob2x);
+  }
+  .sprite-vacantionrentals {
+    @include sprite2x($vacantionrentals2x);
+  }
+  .sprite-vrbo {
+    @include sprite2x($vrbo2x);
+  }
+}

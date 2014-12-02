@@ -26,7 +26,8 @@
     "wiredep": "^1.4.3",
     "gulp-file-include": "~0.5.1",
     "gulp-template": "~1.1.1",
-    "gulp-compass": "~2.0.2"
+    "gulp-compass": "~2.0.2",
+    "gulp.spritesmith": "~1.4.0"
   },
   "engines": {
     "node": ">=0.10.0"

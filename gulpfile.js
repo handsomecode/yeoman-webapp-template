@@ -4,6 +4,7 @@
 var gulp = require('gulp'),
   fileinclude = require('gulp-file-include'),
   template = require('gulp-template'),
+  spritesmith = require('gulp.spritesmith'),
   config = {
     app: 'app/',
     dist: 'dist/'
@@ -143,18 +144,53 @@ gulp.task('watch', ['connect', 'serve'], function () {
     server.changed(file.path);
   });
 
-  gulp.watch('app/templates/*.html', ['includeFiles', 'compileTemplate']);
-  gulp.watch('app/templates/**/*.html', ['includeFiles', 'compileTemplate']);
-  gulp.watch('app/styles/**/*.scss', ['styles']);
-  gulp.watch('app/scripts/**/*.js', ['scripts']);
-  gulp.watch('app/images/**/*', ['images']);
+  gulp.watch(config.app + 'templates/*.html', ['includeFiles', 'compileTemplate']);
+  gulp.watch(config.app + 'templates/**/*.html', ['includeFiles', 'compileTemplate']);
+  gulp.watch(config.app + 'styles/**/*.scss', ['styles']);
+  gulp.watch(config.app + 'scripts/**/*.js', ['scripts']);
+  gulp.watch(config.app + 'images/**/*', ['images']);
+  gulp.watch(config.app + 'images/sprites/**/*.*', ['sprite']);
+  gulp.watch(config.app + 'templates/sprite/**/*.mustache', ['sprite']);
   gulp.watch('bower.json', ['wiredep']);
 });
 
 
-//gulp.task('copyCompiledTemplate', function (){
-//  gulp.run('includeFiles', 'compileTemplate');
-//});
+gulp.task('sprite', function() {
+  var
+    spritePath = config.app + 'images/sprites/*.*',
+    spriteRetinaPath = config.app + 'images/sprites/2x/*.*',
+    destImage = config.app + 'images/',
+    destStyle = config.app + 'styles/partials/',
+    spriteData = gulp.src(spritePath)
+      .pipe(spritesmith({
+        imgName: 'sprite.png',
+        cssName: '_sprite_smith.scss',
+        cssTemplate: config.app + 'templates/sprite/sprite_smith.scss.mustache',
+        algorithm: 'binary-tree'
+      })),
+    spriteRetinaData = gulp.src(spriteRetinaPath)
+      .pipe(spritesmith({
+        imgName: 'sprite-retina.png',
+        cssName: '_sprite_smith-retina.scss',
+        cssTemplate: config.app + 'templates/sprite/sprite_smith2x.scss.mustache',
+        cssVarMap: function (sprite) {
+          sprite.originalName = sprite.name.replace(/@2x/,'');
+          if (sprite.name.indexOf('@') !== -1){
+            sprite.name = sprite.name.replace(/@/,'');
+          } else {
+            sprite.name = sprite.name + '2x';
+          }
+          console.log(sprite);
+        },
+        algorithm: 'binary-tree'
+      }));
+
+  spriteData.img.pipe(gulp.dest(destImage));
+  spriteData.css.pipe(gulp.dest(destStyle));
+  spriteRetinaData.img.pipe(gulp.dest(destImage));
+  spriteRetinaData.css.pipe(gulp.dest(destStyle));
+});
+
 gulp.task('compileTemplate', function () {
   gulp.src(['app/templates/*.html'])
     .pipe(fileinclude({
