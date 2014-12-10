@@ -1,0 +1,404 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+  $abritel-x: 0px;
+  $abritel-y: 149px;
+  $abritel-offset-x: 0px;
+  $abritel-offset-y: -149px;
+  $abritel-width: 67px;
+  $abritel-height: 18px;
+  $abritel-total-width: 1140px;
+  $abritel-total-height: 1566px;
+  $abritel-image: 'undefinedsprite.png';
+  $abritel: 0px 149px 0px -149px 67px 18px 1140px 1566px 'undefinedsprite.png';
+  $alugue-temporada-x: 0px;
+  $alugue-temporada-y: 31px;
+  $alugue-temporada-offset-x: 0px;
+  $alugue-temporada-offset-y: -31px;
+  $alugue-temporada-width: 100px;
+  $alugue-temporada-height: 13px;
+  $alugue-temporada-total-width: 1140px;
+  $alugue-temporada-total-height: 1566px;
+  $alugue-temporada-image: 'undefinedsprite.png';
+  $alugue-temporada: 0px 31px 0px -31px 100px 13px 1140px 1566px 'undefinedsprite.png';
+  $birdhouses-clouds-x: 0px;
+  $birdhouses-clouds-y: 933px;
+  $birdhouses-clouds-offset-x: 0px;
+  $birdhouses-clouds-offset-y: -933px;
+  $birdhouses-clouds-width: 397px;
+  $birdhouses-clouds-height: 233px;
+  $birdhouses-clouds-total-width: 1140px;
+  $birdhouses-clouds-total-height: 1566px;
+  $birdhouses-clouds-image: 'undefinedsprite.png';
+  $birdhouses-clouds: 0px 933px 0px -933px 397px 233px 1140px 1566px 'undefinedsprite.png';
+  $birdhouses-houses-x: 0px;
+  $birdhouses-houses-y: 1166px;
+  $birdhouses-houses-offset-x: 0px;
+  $birdhouses-houses-offset-y: -1166px;
+  $birdhouses-houses-width: 397px;
+  $birdhouses-houses-height: 400px;
+  $birdhouses-houses-total-width: 1140px;
+  $birdhouses-houses-total-height: 1566px;
+  $birdhouses-houses-image: 'undefinedsprite.png';
+  $birdhouses-houses: 0px 1166px 0px -1166px 397px 400px 1140px 1566px 'undefinedsprite.png';
+  $bluetent-dots-mobile-x: 0px;
+  $bluetent-dots-mobile-y: 0px;
+  $bluetent-dots-mobile-offset-x: 0px;
+  $bluetent-dots-mobile-offset-y: 0px;
+  $bluetent-dots-mobile-width: 32px;
+  $bluetent-dots-mobile-height: 8px;
+  $bluetent-dots-mobile-total-width: 1140px;
+  $bluetent-dots-mobile-total-height: 1566px;
+  $bluetent-dots-mobile-image: 'undefinedsprite.png';
+  $bluetent-dots-mobile: 0px 0px 0px 0px 32px 8px 1140px 1566px 'undefinedsprite.png';
+  $bluetent-dots-x: 0px;
+  $bluetent-dots-y: 85px;
+  $bluetent-dots-offset-x: 0px;
+  $bluetent-dots-offset-y: -85px;
+  $bluetent-dots-width: 63px;
+  $bluetent-dots-height: 15px;
+  $bluetent-dots-total-width: 1140px;
+  $bluetent-dots-total-height: 1566px;
+  $bluetent-dots-image: 'undefinedsprite.png';
+  $bluetent-dots: 0px 85px 0px -85px 63px 15px 1140px 1566px 'undefinedsprite.png';
+  $bluetent-mobile-x: 0px;
+  $bluetent-mobile-y: 334px;
+  $bluetent-mobile-offset-x: 0px;
+  $bluetent-mobile-offset-y: -334px;
+  $bluetent-mobile-width: 48px;
+  $bluetent-mobile-height: 49px;
+  $bluetent-mobile-total-width: 1140px;
+  $bluetent-mobile-total-height: 1566px;
+  $bluetent-mobile-image: 'undefinedsprite.png';
+  $bluetent-mobile: 0px 334px 0px -334px 48px 49px 1140px 1566px 'undefinedsprite.png';
+  $bluetent-x: 0px;
+  $bluetent-y: 599px;
+  $bluetent-offset-x: 0px;
+  $bluetent-offset-y: -599px;
+  $bluetent-width: 66px;
+  $bluetent-height: 67px;
+  $bluetent-total-width: 1140px;
+  $bluetent-total-height: 1566px;
+  $bluetent-image: 'undefinedsprite.png';
+  $bluetent: 0px 599px 0px -599px 66px 67px 1140px 1566px 'undefinedsprite.png';
+  $bqqkabach-x: 0px;
+  $bqqkabach-y: 44px;
+  $bqqkabach-offset-x: 0px;
+  $bqqkabach-offset-y: -44px;
+  $bqqkabach-width: 82px;
+  $bqqkabach-height: 13px;
+  $bqqkabach-total-width: 1140px;
+  $bqqkabach-total-height: 1566px;
+  $bqqkabach-image: 'undefinedsprite.png';
+  $bqqkabach: 0px 44px 0px -44px 82px 13px 1140px 1566px 'undefinedsprite.png';
+  $fewo-direkt-x: 0px;
+  $fewo-direkt-y: 71px;
+  $fewo-direkt-offset-x: 0px;
+  $fewo-direkt-offset-y: -71px;
+  $fewo-direkt-width: 87px;
+  $fewo-direkt-height: 14px;
+  $fewo-direkt-total-width: 1140px;
+  $fewo-direkt-total-height: 1566px;
+  $fewo-direkt-image: 'undefinedsprite.png';
+  $fewo-direkt: 0px 71px 0px -71px 87px 14px 1140px 1566px 'undefinedsprite.png';
+  $graph-dots1-mobile-x: 0px;
+  $graph-dots1-mobile-y: 486px;
+  $graph-dots1-mobile-offset-x: 0px;
+  $graph-dots1-mobile-offset-y: -486px;
+  $graph-dots1-mobile-width: 13px;
+  $graph-dots1-mobile-height: 52px;
+  $graph-dots1-mobile-total-width: 1140px;
+  $graph-dots1-mobile-total-height: 1566px;
+  $graph-dots1-mobile-image: 'undefinedsprite.png';
+  $graph-dots1-mobile: 0px 486px 0px -486px 13px 52px 1140px 1566px 'undefinedsprite.png';
+  $graph-dots1-x: 0px;
+  $graph-dots1-y: 666px;
+  $graph-dots1-offset-x: 0px;
+  $graph-dots1-offset-y: -666px;
+  $graph-dots1-width: 25px;
+  $graph-dots1-height: 104px;
+  $graph-dots1-total-width: 1140px;
+  $graph-dots1-total-height: 1566px;
+  $graph-dots1-image: 'undefinedsprite.png';
+  $graph-dots1: 0px 666px 0px -666px 25px 104px 1140px 1566px 'undefinedsprite.png';
+  $graph-dots2-mobile-x: 0px;
+  $graph-dots2-mobile-y: 538px;
+  $graph-dots2-mobile-offset-x: 0px;
+  $graph-dots2-mobile-offset-y: -538px;
+  $graph-dots2-mobile-width: 26px;
+  $graph-dots2-mobile-height: 61px;
+  $graph-dots2-mobile-total-width: 1140px;
+  $graph-dots2-mobile-total-height: 1566px;
+  $graph-dots2-mobile-image: 'undefinedsprite.png';
+  $graph-dots2-mobile: 0px 538px 0px -538px 26px 61px 1140px 1566px 'undefinedsprite.png';
+  $graph-dots2-x: 0px;
+  $graph-dots2-y: 383px;
+  $graph-dots2-offset-x: 0px;
+  $graph-dots2-offset-y: -383px;
+  $graph-dots2-width: 54px;
+  $graph-dots2-height: 51px;
+  $graph-dots2-total-width: 1140px;
+  $graph-dots2-total-height: 1566px;
+  $graph-dots2-image: 'undefinedsprite.png';
+  $graph-dots2: 0px 383px 0px -383px 54px 51px 1140px 1566px 'undefinedsprite.png';
+  $graph-dots3-mobile-x: 0px;
+  $graph-dots3-mobile-y: 434px;
+  $graph-dots3-mobile-offset-x: 0px;
+  $graph-dots3-mobile-offset-y: -434px;
+  $graph-dots3-mobile-width: 15px;
+  $graph-dots3-mobile-height: 52px;
+  $graph-dots3-mobile-total-width: 1140px;
+  $graph-dots3-mobile-total-height: 1566px;
+  $graph-dots3-mobile-image: 'undefinedsprite.png';
+  $graph-dots3-mobile: 0px 434px 0px -434px 15px 52px 1140px 1566px 'undefinedsprite.png';
+  $graph-dots3-x: 0px;
+  $graph-dots3-y: 225px;
+  $graph-dots3-offset-x: 0px;
+  $graph-dots3-offset-y: -225px;
+  $graph-dots3-width: 43px;
+  $graph-dots3-height: 28px;
+  $graph-dots3-total-width: 1140px;
+  $graph-dots3-total-height: 1566px;
+  $graph-dots3-image: 'undefinedsprite.png';
+  $graph-dots3: 0px 225px 0px -225px 43px 28px 1140px 1566px 'undefinedsprite.png';
+  $graph-dots4-x: 0px;
+  $graph-dots4-y: 293px;
+  $graph-dots4-offset-x: 0px;
+  $graph-dots4-offset-y: -293px;
+  $graph-dots4-width: 99px;
+  $graph-dots4-height: 41px;
+  $graph-dots4-total-width: 1140px;
+  $graph-dots4-total-height: 1566px;
+  $graph-dots4-image: 'undefinedsprite.png';
+  $graph-dots4: 0px 293px 0px -293px 99px 41px 1140px 1566px 'undefinedsprite.png';
+  $homeaway-x: 0px;
+  $homeaway-y: 100px;
+  $homeaway-offset-x: 0px;
+  $homeaway-offset-y: -100px;
+  $homeaway-width: 90px;
+  $homeaway-height: 16px;
+  $homeaway-total-width: 1140px;
+  $homeaway-total-height: 1566px;
+  $homeaway-image: 'undefinedsprite.png';
+  $homeaway: 0px 100px 0px -100px 90px 16px 1140px 1566px 'undefinedsprite.png';
+  $homelidays-x: 0px;
+  $homelidays-y: 185px;
+  $homelidays-offset-x: 0px;
+  $homelidays-offset-y: -185px;
+  $homelidays-width: 79px;
+  $homelidays-height: 19px;
+  $homelidays-total-width: 1140px;
+  $homelidays-total-height: 1566px;
+  $homelidays-image: 'undefinedsprite.png';
+  $homelidays: 0px 185px 0px -185px 79px 19px 1140px 1566px 'undefinedsprite.png';
+  $hr-shadow-x: 0px;
+  $hr-shadow-y: 770px;
+  $hr-shadow-offset-x: 0px;
+  $hr-shadow-offset-y: -770px;
+  $hr-shadow-width: 1140px;
+  $hr-shadow-height: 163px;
+  $hr-shadow-total-width: 1140px;
+  $hr-shadow-total-height: 1566px;
+  $hr-shadow-image: 'undefinedsprite.png';
+  $hr-shadow: 0px 770px 0px -770px 1140px 163px 1140px 1566px 'undefinedsprite.png';
+  $logo-mobile-x: 0px;
+  $logo-mobile-y: 132px;
+  $logo-mobile-offset-x: 0px;
+  $logo-mobile-offset-y: -132px;
+  $logo-mobile-width: 156px;
+  $logo-mobile-height: 17px;
+  $logo-mobile-total-width: 1140px;
+  $logo-mobile-total-height: 1566px;
+  $logo-mobile-image: 'undefinedsprite.png';
+  $logo-mobile: 0px 132px 0px -132px 156px 17px 1140px 1566px 'undefinedsprite.png';
+  $logo-x: 0px;
+  $logo-y: 253px;
+  $logo-offset-x: 0px;
+  $logo-offset-y: -253px;
+  $logo-width: 199px;
+  $logo-height: 40px;
+  $logo-total-width: 1140px;
+  $logo-total-height: 1566px;
+  $logo-image: 'undefinedsprite.png';
+  $logo: 0px 253px 0px -253px 199px 40px 1140px 1566px 'undefinedsprite.png';
+  $ownersdirect-x: 0px;
+  $ownersdirect-y: 18px;
+  $ownersdirect-offset-x: 0px;
+  $ownersdirect-offset-y: -18px;
+  $ownersdirect-width: 99px;
+  $ownersdirect-height: 13px;
+  $ownersdirect-total-width: 1140px;
+  $ownersdirect-total-height: 1566px;
+  $ownersdirect-image: 'undefinedsprite.png';
+  $ownersdirect: 0px 18px 0px -18px 99px 13px 1140px 1566px 'undefinedsprite.png';
+  $stayz-x: 0px;
+  $stayz-y: 204px;
+  $stayz-offset-x: 0px;
+  $stayz-offset-y: -204px;
+  $stayz-width: 56px;
+  $stayz-height: 21px;
+  $stayz-total-width: 1140px;
+  $stayz-total-height: 1566px;
+  $stayz-image: 'undefinedsprite.png';
+  $stayz: 0px 204px 0px -204px 56px 21px 1140px 1566px 'undefinedsprite.png';
+  $toprural-x: 0px;
+  $toprural-y: 167px;
+  $toprural-offset-x: 0px;
+  $toprural-offset-y: -167px;
+  $toprural-width: 63px;
+  $toprural-height: 18px;
+  $toprural-total-width: 1140px;
+  $toprural-total-height: 1566px;
+  $toprural-image: 'undefinedsprite.png';
+  $toprural: 0px 167px 0px -167px 63px 18px 1140px 1566px 'undefinedsprite.png';
+  $travelmob-x: 0px;
+  $travelmob-y: 57px;
+  $travelmob-offset-x: 0px;
+  $travelmob-offset-y: -57px;
+  $travelmob-width: 84px;
+  $travelmob-height: 14px;
+  $travelmob-total-width: 1140px;
+  $travelmob-total-height: 1566px;
+  $travelmob-image: 'undefinedsprite.png';
+  $travelmob: 0px 57px 0px -57px 84px 14px 1140px 1566px 'undefinedsprite.png';
+  $vacantionrentals-x: 0px;
+  $vacantionrentals-y: 8px;
+  $vacantionrentals-offset-x: 0px;
+  $vacantionrentals-offset-y: -8px;
+  $vacantionrentals-width: 111px;
+  $vacantionrentals-height: 10px;
+  $vacantionrentals-total-width: 1140px;
+  $vacantionrentals-total-height: 1566px;
+  $vacantionrentals-image: 'undefinedsprite.png';
+  $vacantionrentals: 0px 8px 0px -8px 111px 10px 1140px 1566px 'undefinedsprite.png';
+  $vrbo-x: 0px;
+  $vrbo-y: 116px;
+  $vrbo-offset-x: 0px;
+  $vrbo-offset-y: -116px;
+  $vrbo-width: 57px;
+  $vrbo-height: 16px;
+  $vrbo-total-width: 1140px;
+  $vrbo-total-height: 1566px;
+  $vrbo-image: 'undefinedsprite.png';
+  $vrbo: 0px 116px 0px -116px 57px 16px 1140px 1566px 'undefinedsprite.png';
+
+  @mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+  }
+
+  @mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+  }
+
+  @mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../images/#{$sprite-image});
+  }
+
+  @mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+  }
+
+$sprite_width: 1140px;
+$sprite_height: 1566px;
+
+  .sprite-abritel {
+  @include sprite($abritel);
+  }
+  .sprite-alugue-temporada {
+  @include sprite($alugue-temporada);
+  }
+  .sprite-birdhouses-clouds {
+  @include sprite($birdhouses-clouds);
+  }
+  .sprite-birdhouses-houses {
+  @include sprite($birdhouses-houses);
+  }
+  .sprite-bluetent-dots-mobile {
+  @include sprite($bluetent-dots-mobile);
+  }
+  .sprite-bluetent-dots {
+  @include sprite($bluetent-dots);
+  }
+  .sprite-bluetent-mobile {
+  @include sprite($bluetent-mobile);
+  }
+  .sprite-bluetent {
+  @include sprite($bluetent);
+  }
+  .sprite-bqqkabach {
+  @include sprite($bqqkabach);
+  }
+  .sprite-fewo-direkt {
+  @include sprite($fewo-direkt);
+  }
+  .sprite-graph-dots1-mobile {
+  @include sprite($graph-dots1-mobile);
+  }
+  .sprite-graph-dots1 {
+  @include sprite($graph-dots1);
+  }
+  .sprite-graph-dots2-mobile {
+  @include sprite($graph-dots2-mobile);
+  }
+  .sprite-graph-dots2 {
+  @include sprite($graph-dots2);
+  }
+  .sprite-graph-dots3-mobile {
+  @include sprite($graph-dots3-mobile);
+  }
+  .sprite-graph-dots3 {
+  @include sprite($graph-dots3);
+  }
+  .sprite-graph-dots4 {
+  @include sprite($graph-dots4);
+  }
+  .sprite-homeaway {
+  @include sprite($homeaway);
+  }
+  .sprite-homelidays {
+  @include sprite($homelidays);
+  }
+  .sprite-hr-shadow {
+  @include sprite($hr-shadow);
+  }
+  .sprite-logo-mobile {
+  @include sprite($logo-mobile);
+  }
+  .sprite-logo {
+  @include sprite($logo);
+  }
+  .sprite-ownersdirect {
+  @include sprite($ownersdirect);
+  }
+  .sprite-stayz {
+  @include sprite($stayz);
+  }
+  .sprite-toprural {
+  @include sprite($toprural);
+  }
+  .sprite-travelmob {
+  @include sprite($travelmob);
+  }
+  .sprite-vacantionrentals {
+  @include sprite($vacantionrentals);
+  }
+  .sprite-vrbo {
+  @include sprite($vrbo);
+  }

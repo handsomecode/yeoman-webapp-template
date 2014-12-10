@@ -8,7 +8,7 @@
 // If you want to recursively match all subfolders, use:
 // 'test/spec/**/*.js'
 
-var mout = require( "mout" );
+var mout = require("mout");
 
 module.exports = function (grunt) {
 
@@ -89,9 +89,9 @@ module.exports = function (grunt) {
     bake: {
       build: {
         options: {
-          process: function(source, content) {
-            source = source.replace( /\{\{\s*([\.\-\w]*)\s*\}\}/g, function( match, key ) {
-              return mout.object.get( content, key ) || "";
+          process: function (source, content) {
+            source = source.replace(/\{\{\s*([\.\-\w]*)\s*\}\}/g, function (match, key) {
+              return mout.object.get(content, key) || "";
 //              return resolveName( key, content );
             });
             return source.replace(/\.\.\/\.\.\/bower/g, 'bower');
@@ -100,7 +100,7 @@ module.exports = function (grunt) {
         },
         files: {
           'app/index.html': 'app/templates/index.html'
-        // 'dest_file': 'source_file'
+          // 'dest_file': 'source_file'
         }
       }
     },
@@ -116,7 +116,7 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          middleware: function(connect) {
+          middleware: function (connect) {
             return [
               connect.static('.tmp'),
               connect().use('/bower_components', connect.static('./bower_components')),
@@ -129,7 +129,7 @@ module.exports = function (grunt) {
         options: {
           open: false,
           port: 9001,
-          middleware: function(connect) {
+          middleware: function (connect) {
             return [
               connect.static('.tmp'),
               connect.static('test'),
@@ -387,6 +387,35 @@ module.exports = function (grunt) {
         cwd: '<%= config.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      }
+    },
+    sprite: {
+      options: {
+        padding: 0,
+        engine: 'gm',
+        imgOpts: {
+          'quality': 10
+        }
+      },
+      sprite: {
+        src: '<%= config.app %>/images/sprites/*.png',
+        destImg: '<%= config.app %>/images/sprite.png',
+        destCSS: '<%= config.app %>/styles/partials/_sprite_smith.scss',
+        cssTemplate: '<%= config.app %>/templates/sprites/sprite_smith.scss.mustache'
+      },
+      sprite2x: {
+        src: '<%= config.app %>/images/sprites/2x/*.png',
+        destImg: '<%= config.app %>/images/sprite@2x.png',
+        destCSS: '<%= config.app %>/styles/partials/_sprite_smith@2x.scss',
+        cssTemplate: '<%= config.app %>/templates/sprites/sprite_smith2x.scss.mustache',
+        cssVarMap: function (sprite) {
+          sprite.originalName = sprite.name.replace(/@2x/,'');
+          if (sprite.name.indexOf('@') !== -1){
+            sprite.name = sprite.name.replace(/@/,'');
+          } else {
+            sprite.name = sprite.name + '2x';
+          }
+        }
       }
     },
 
