@@ -1,0 +1,69 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+  $empty2x-x: round(0 / 2px);
+  $empty2x-y: round(0 / 2px);
+  $empty2x-offset-x: round(0 / 2px);
+  $empty2x-offset-y: round(0 / 2px);
+  $empty2x-width: round(2 / 2px);
+  $empty2x-height: round(2 / 2px);
+  $empty2x-total-width: round(2 / 2px);
+  $empty2x-total-height: round(2 / 2px);
+  $empty2x-image: 'sprite-retina.png';
+  $empty2x: round(0px / 2) round(0px / 2) round(0px / 2) round(0px / 2) round(2px / 2) round(2px / 2) round(2px / 2) round(2px / 2) 'sprite-retina.png' round(2px / 2) round(2px / 2);
+
+
+  @mixin sprite2x-width($sprite) {
+    width: nth($sprite, 5);
+  }
+
+  @mixin sprite2x-height($sprite) {
+    height: nth($sprite, 6);
+  }
+
+  @mixin sprite2x-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite2x-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: url(../images/#{$sprite-image});
+  }
+
+  @mixin sprite-2x-old($sprite) {
+    @include sprite2x-image($sprite);
+    @include sprite2x-position($sprite);
+    @include sprite2x-width($sprite);
+    @include sprite2x-height($sprite);
+  }
+
+  @mixin sprite2x($sprite) {
+    @if $sprite != '' {
+
+      @include sprite2x-image($sprite);
+      @include sprite2x-position($sprite);
+      @include sprite2x-width($sprite);
+      @include sprite2x-height($sprite);
+      background-size: nth($sprite, 10) nth($sprite, 11);
+    }
+  }
+
+
+@media (-webkit-min-device-pixel-ratio: 1.3),
+(min--moz-device-pixel-ratio: 1.3),
+(-o-min-device-pixel-ratio: 2.6/2),
+(min-device-pixel-ratio: 1.3),
+(min-resolution: 1.3dppx) {
+  .sprite-empty {
+    @include sprite2x($empty2x);
+  }
+}
